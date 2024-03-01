@@ -12,9 +12,11 @@
   <h1>Using Javascript to turn this turn on a Lightbulb!</h1>
   <br>
   <p>I'm going to try and create a simple two button system to turn on this lightbulb.</p>
-  <button onclick="document.getElementById('myImage').src='images/02_js_assists/pic_bulbon.gif'">Turn on the light</button>
-  <img id="myImage" src="images/02_js_assists/pic_bulboff.gif" style="width:100px">
-  <button onclick="document.getElementById('myImage').src='images/02_js_assists/pic_bulboff.gif'">Turn off the light</button>
-  
+  <img id="myImage" src="assists\pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+  <script src = "02_javascript_button.js"></script>
 </body>
 </html>
