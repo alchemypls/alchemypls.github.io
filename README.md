@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stellar Portfolio
+
+An interactive stellar portfolio website that lets users navigate through constellations to discover projects. The experience combines astronomy with web development, allowing visitors to explore the cosmos while learning about featured projects.
+
+## Features
+
+- **Interactive Star Navigation**: Navigate between stars in constellations using intuitive controls
+- **Constellation Discovery**: Progressively unlock and discover constellations as you explore
+- **Canvas-based Star Rendering**: Efficient rendering of thousands of stars with proper depth and visual appeal
+- **Portfolio Integration**: Projects attached to significant stars in the night sky
+- **Progress Tracking**: Game-like mechanics to track visited stars and discovered constellations
+
+## Technical Stack
+
+- **Framework**: Next.js with TypeScript
+- **Rendering**: Canvas API for efficient star field rendering
+- **State Management**: Zustand for global state and persistence
+- **Data**: Processed HYG star database (119,627 stars) optimized into three data files:
+  - 98 navigable stars (bright, named stars users can click)
+  - 3,710 background stars (dimmer stars for visual depth)
+  - 25 major constellations with defined star connections
+
+## Core Components
+
+- **StarField**: Canvas-based component for efficient star rendering
+- **StarChart**: Navigation controls and animations for constellation exploration
+- **NavigationArrow**: Directional navigation between connected stars
+- **Project Pages**: Individual pages for stars with attached portfolio projects
+
+## Featured Projects
+
+Currently attached to famous stars:
+
+- Deneb (Alpha Cygni) → Stellar Portfolio Engine
+- Sadr (Gamma Cygni) → Constellation Mapper
+- Betelgeuse (Alpha Orionis) → Nebula Framework
+- Vega (Alpha Lyrae) → Astral Analytics
+- Regulus (Alpha Leonis) → Orbital CMS
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Roadmap
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Enhance star chart rendering with WebGL for better performance
+- Add smooth transitions between star navigation
+- Implement audio effects for a more immersive experience
+- Create additional project showcases for more stars
+- Add educational content about astronomy alongside portfolio items
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Immediate Next Steps
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Implement constellation line rendering between connected stars
+2. Add smooth transitions when navigating between stars
+3. Create first detailed project showcase page with proper styling
+4. Implement visual feedback for available navigation options
+5. Add sound effects for star selection and navigation

@@ -1,0 +1,112 @@
+{
+  "deneb": {
+    "starId": "deneb",
+    "starName": "Deneb",
+    "constellation": "Cyg",
+    "projectId": "stellar-portfolio",
+    "project": {
+      "id": "stellar-portfolio",
+      "title": "Stellar Portfolio Engine",
+      "description": "A dynamic portfolio system that grows and evolves like the cosmos itself. Built with modern web technologies to showcase projects in an immersive starfield experience.",
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "Canvas API",
+        "Tailwind CSS"
+      ],
+      "image": "/projects/portfolio-engine.jpg",
+      "links": {
+        "github": "https://github.com/alchemypls/stellar-portfolio",
+        "live": "https://stellar-portfolio.vercel.app"
+      }
+    }
+  },
+  "sadr": {
+    "starId": "sadr",
+    "starName": "Sadr",
+    "constellation": "Cyg",
+    "projectId": "constellation-mapper",
+    "project": {
+      "id": "constellation-mapper",
+      "title": "Constellation Mapper",
+      "description": "An interactive star mapping application that connects celestial objects with smooth animations and real-time data visualization.",
+      "tech": [
+        "React",
+        "D3.js",
+        "WebGL",
+        "API Integration"
+      ],
+      "image": "/projects/constellation-mapper.jpg",
+      "links": {
+        "github": "https://github.com/alchemypls/constellation-mapper",
+        "live": "https://constellation-mapper.vercel.app"
+      }
+    }
+  },
+  "betelgeuse": {
+    "starId": "betelgeuse",
+    "starName": "Betelgeuse",
+    "constellation": "Ori",
+    "projectId": "nebula-framework",
+    "project": {
+      "id": "nebula-framework",
+      "title": "Nebula Framework",
+      "description": "A lightweight yet powerful framework for building scalable web applications with stellar performance and cosmic flexibility.",
+      "tech": [
+        "TypeScript",
+        "Node.js",
+        "GraphQL",
+        "Docker"
+      ],
+      "image": "/projects/nebula-framework.jpg",
+      "links": {
+        "github": "https://github.com/alchemypls/nebula-framework",
+        "live": "https://nebula-framework.dev"
+      }
+    }
+  },
+  "vega": {
+    "starId": "vega",
+    "starName": "Vega",
+    "constellation": "Lyr",
+    "projectId": "astral-analytics",
+    "project": {
+      "id": "astral-analytics",
+      "title": "Astral Analytics",
+      "description": "A data visualization platform for astronomy enthusiasts, featuring real-time cosmic data and interactive celestial charts.",
+      "tech": [
+        "Vue.js",
+        "Python",
+        "TensorFlow",
+        "Flask"
+      ],
+      "image": "/projects/astral-analytics.jpg",
+      "links": {
+        "github": "https://github.com/alchemypls/astral-analytics",
+        "live": "https://astral-analytics.io"
+      }
+    }
+  },
+  "regulus": {
+    "starId": "regulus",
+    "starName": "Regulus",
+    "constellation": "Leo",
+    "projectId": "orbital-cms",
+    "project": {
+      "id": "orbital-cms",
+      "title": "Orbital CMS",
+      "description": "A content management system designed for astronomers and space enthusiasts to share discoveries and research.",
+      "tech": [
+        "Angular",
+        "MongoDB",
+        "Express",
+        "Node.js"
+      ],
+      "image": "/projects/orbital-cms.jpg",
+      "links": {
+        "github": "https://github.com/alchemypls/orbital-cms",
+        "live": "https://orbital-cms.com"
+      }
+    }
+  }
+}

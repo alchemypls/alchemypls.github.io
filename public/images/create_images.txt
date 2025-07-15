@@ -1,0 +1,10 @@
+To complete the background visuals, you'll need two images:
+
+1. visceral_map.png - A semi-transparent map of the constellation that gradually appears
+   as you complete more of the scanning. This should be a drawn/stylized representation 
+   of the star systems with connecting lines, possibly with runes or ancient markings.
+
+2. Optional: You can also create a more detailed starfield_bg.png to replace the 
+   gradient background if desired.
+
+These images should be placed in this public/images/ directory.
