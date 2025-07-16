@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   },
   // Ensure GitHub Pages doesn't use Jekyll which would ignore files starting with underscore
   trailingSlash: true,
+  // Disable the distDir option if it's set
+  distDir: 'out',
 };
 
 export default nextConfig;
