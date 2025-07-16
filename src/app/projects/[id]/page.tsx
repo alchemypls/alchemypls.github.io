@@ -39,6 +39,27 @@ interface ProjectAssignment {
   project: Project;
 }
 
+// Generate static params for all possible project IDs
+export async function generateStaticParams() {
+  // Get all star IDs
+  const starIds = (navigableStars as Star[]).map(star => ({
+    id: star.id
+  }));
+  
+  // Get all project IDs
+  const projectIds = Object.values(projectAssignments as Record<string, ProjectAssignment>)
+    .map(assignment => ({
+      id: assignment.projectId
+    }));
+  
+  // Combine both sets of IDs (removing duplicates)
+  const allIds = [...starIds, ...projectIds];
+  const uniqueIds = Array.from(new Set(allIds.map(item => item.id)))
+    .map(id => ({ id }));
+  
+  return uniqueIds;
+}
+
 export default function ProjectPage() {
   const params = useParams();
   const router = useRouter();
