@@ -1,0 +1,50 @@
+name: Manual Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Debug Info
+        run: |
+          echo "Node version:"
+          node --version
+          echo "NPM version:"
+          npm --version
+          echo "Current directory:"
+          pwd
+          echo "Directory contents:"
+          ls -la
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: List installed packages
+        run: npm list --depth=0
+
+      - name: Build
+        run: npm run build
+
+      - name: List output directory
+        run: |
+          echo "Output directory contents:"
+          ls -la out || echo "out directory not found"
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: out
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
